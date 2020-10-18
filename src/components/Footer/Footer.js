@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaTwitter, FaInstagram, FaLinkedin, FaGithub } from 'react-icons/fa'
 import {
   FooterContainer,
   FooterSubscription,
@@ -11,62 +12,41 @@ import {
   FooterLinksItem,
   FooterLinksTitle,
   FooterLink,
+  SocialMedia,
+  SocialMediaWrap,
+  SocialIcon,
+  SocialLogo,
+  WebsiteRights,
+  SocialIcons,
+  SocialIconLink
 } from './Footer.elements';
 import { Button } from '../../globalStyles'
 
 const Footer = () => {
   return (
     <FooterContainer>
-      <FooterSubscription>
-        <FooterSubHeading>
-          Join our exclusive membership to receive the latest news and trends
-        </FooterSubHeading>
-        <FooterSubText>
-          You can unsubscribe at any  time
-        </FooterSubText>
-        <Form>
-          <FormInput name="email" type="email" placeholder="Your Email..." />
-          <Button fontBig>
-            Subscribe
-            </Button>
-        </Form>
-      </FooterSubscription>
-      <FooterLinksContainer>
-        <FooterLinksWrapper>
-          <FooterLinksItem>
-            <FooterLinksTitle> About Us</FooterLinksTitle>
-            <FooterLink to='/'>How It Works</FooterLink>
-            <FooterLink to='/'>Testimonials</FooterLink>
-            <FooterLink to='/'>Cereers</FooterLink>
-            <FooterLink to='/'>Investors</FooterLink>
-            <FooterLink to='/'>Terms of Services</FooterLink>
-          </FooterLinksItem>
-          <FooterLinksItem>
-            <FooterLinksTitle> Contact Us</FooterLinksTitle>
-            <FooterLink to='/'>How It Works</FooterLink>
-            <FooterLink to='/'>Testimonials</FooterLink>
-            <FooterLink to='/'>Cereers</FooterLink>
-            <FooterLink to='/'>Investors</FooterLink>
-            <FooterLink to='/'>Terms of Services</FooterLink>
-          </FooterLinksItem>
-          <FooterLinksItem>
-            <FooterLinksTitle> Videos</FooterLinksTitle>
-            <FooterLink to='/'>How It Works</FooterLink>
-            <FooterLink to='/'>Testimonials</FooterLink>
-            <FooterLink to='/'>Cereers</FooterLink>
-            <FooterLink to='/'>Investors</FooterLink>
-            <FooterLink to='/'>Terms of Services</FooterLink>
-          </FooterLinksItem>
-          <FooterLinksItem>
-            <FooterLinksTitle> Social Media</FooterLinksTitle>
-            <FooterLink to='/'>How It Works</FooterLink>
-            <FooterLink to='/'>Testimonials</FooterLink>
-            <FooterLink to='/'>Cereers</FooterLink>
-            <FooterLink to='/'>Investors</FooterLink>
-            <FooterLink to='/'>Terms of Services</FooterLink>
-          </FooterLinksItem>
-        </FooterLinksWrapper>
-      </FooterLinksContainer>
+      <SocialMedia>
+        <SocialMediaWrap>
+          <SocialLogo>
+            <SocialIcon to="/" />
+          </SocialLogo>
+          <WebsiteRights>WIKUGW © 2020</WebsiteRights>
+          <SocialIcons>
+            <SocialIconLink href="https://github.com/wikugw" target="_blank" aria-label="Github">
+              <FaGithub />
+            </SocialIconLink>
+            <SocialIconLink href="https://www.instagram.com/wikugw/" target="_blank" aria-label="Instagram">
+              <FaInstagram />
+            </SocialIconLink>
+            <SocialIconLink href="https://twitter.com/wikugw" target="_blank" aria-label="Twitter">
+              <FaTwitter />
+            </SocialIconLink>
+            <SocialIconLink href="https://www.linkedin.com/in/wikugw/" target="_blank" aria-label="LinkedIn">
+              <FaLinkedin />
+            </SocialIconLink>
+          </SocialIcons>
+        </SocialMediaWrap>
+      </SocialMedia>
     </FooterContainer>
   )
 }

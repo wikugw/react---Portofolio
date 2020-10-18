@@ -24,7 +24,7 @@ const InfoSection = ({ lightBg, imgStart, lightTopLine, lightText, lightTextDesc
                 <TopLine lightTopLine={lightTopLine}>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle lightTextDesc={lightTextDesc}>{description}</Subtitle>
-                <Link to="/singup">
+                <Link href="../../attachments/CV-Portfolio-Wiku-Galindra-Wardhana" download>
                   <Button big fontBig primary={primary}>{buttonLabel}</Button>
                 </Link>
               </TextWrapper>

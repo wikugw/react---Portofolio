@@ -21,10 +21,10 @@ export const homeObjTwo = {
   lightTopLine: false,
   lightTextDesc: false,
   buttonLabel: 'Get Started',
-  description: 'We Help business owners increase their revenue, Our team of unique specialist can help achieve your business goal',
+  description: 'you can see all my works by getting my latest portfolio or by just simply scrolling down ⬇⬇⬇',
   headline: 'Lead Generation Specialist for Onlien Business',
   lightText: false,
-  topLine: 'Marketing agency',
+  topLine: 'Wiku Galindra Wardhana',
   img: require('../../images/profile.jpg'),
   start: 'true',
   alt: 'image'

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { FaWikipediaW } from 'react-icons/fa';
+import { FaWeebly } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { Container } from '../../globalStyles';
 
@@ -33,7 +33,7 @@ display: flex;
 align-items: center;
 `;
 
-export const NavIcon = styled(FaWikipediaW)`
+export const NavIcon = styled(FaWeebly)`
 margin-right: 0.5rem;
 `;
 
